@@ -933,7 +933,7 @@ footer {
       <span class="dot"></span>
       <span>4,7 ★ · 520 avis</span>
       <span class="dot"></span>
-      <span>Ouvert dès 19h</span>
+      <span>Mer–Dim · Midi &amp; soir</span>
     </div>
     <a href="tel:+33442922568" class="hero-cta">Réserver une table</a>
   </div>
@@ -1130,8 +1130,10 @@ footer {
       </div>
       <div class="infos-block">
         <h4>Horaires</h4>
-        <p>Service du soir — à partir de 19h
-          <span class="sub">Déjeuner selon saison — nous consulter</span>
+        <p>Mercredi – Vendredi · 12h–14h &amp; 19h–22h<br>
+          Samedi · 12h–14h30 &amp; 19h–22h<br>
+          Dimanche · 12h–15h &amp; 19h–22h
+          <span class="sub">Fermé lundi et mardi</span>
         </p>
       </div>
       <div class="infos-block">
@@ -1139,12 +1141,16 @@ footer {
         <p><a href="tel:+33442922568">04 42 92 25 68</a></p>
       </div>
       <div class="infos-block">
-        <h4>En ligne</h4>
-        <p><a href="https://latablederina.com" target="_blank" rel="noopener">latablederina.com</a></p>
+        <h4>Services</h4>
+        <p>Climatisation · Wifi · Terrasses ombragées
+          <span class="sub">Privatisation possible — nous consulter</span>
+        </p>
       </div>
       <div class="infos-block">
-        <h4>Budget</h4>
-        <p>30 – 40 € par personne</p>
+        <h4>Budget &amp; paiement</h4>
+        <p>30 – 40 € par personne
+          <span class="sub">CB sans contact, Visa, Mastercard, chèques, espèces</span>
+        </p>
       </div>
     </div>
     <div>
@@ -1208,10 +1214,40 @@ footer {
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
+      "opens": "12:00",
+      "closes": "14:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday"],
       "opens": "19:00",
-      "closes": "23:00"
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "12:00",
+      "closes": "14:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "12:00",
+      "closes": "15:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "19:00",
+      "closes": "22:00"
     }
+  ],
+  "paymentAccepted": "Cash, Credit Card, Debit Card, Check",
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Outdoor seating", "value": true}
   ],
   "acceptsReservations": "True"
 }
