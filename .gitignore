@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Sources non utilisées par le site (versions optimisées dans photos/)
+/Capture*.png
+/plat*.webp
+/dessert*.webp
+
+# Dossiers sans rapport avec ce site
+/ecommerce/
+/starterkit/
